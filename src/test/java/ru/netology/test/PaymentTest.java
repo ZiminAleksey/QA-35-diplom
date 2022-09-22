@@ -98,7 +98,7 @@ public class PaymentTest {
         assertNull(DBUtils.getPaymentStatus());
     }
 
-    // #6
+    // #6 failed
     @SneakyThrows
     @Test
     void shouldBuyPaymentZeroCard() {
