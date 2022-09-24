@@ -3,6 +3,8 @@
 ## Документация
 
 * [План выполнения работ](https://github.com/ZiminAleksey/QA-35-diplom/blob/44fafc6bb94d2ae12e588a2a34e8e57ef178fec7/Docs/Plan.md)
+* [Отчет о проведенном тестировании](https://github.com/ZiminAleksey/QA-35-diplom/blob/master/Docs/Report.md)
+* [Отчет о проведенной автоматизации](https://github.com/ZiminAleksey/QA-35-diplom/blob/47a781724ccca90f9f7899de25caf6fe3946b4de/Docs/Summary.md)
 
 
 ## О проекте
