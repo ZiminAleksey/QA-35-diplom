@@ -9,7 +9,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DBUtils {
-    private static String urlMySql = "jdbc:mysql://localhost:3306/app";
+    private static String url = System.getProperty("db.url");
     private static String user = System.getProperty("db.user");
     private static String password = System.getProperty("db.password");
 
@@ -21,7 +21,7 @@ public class DBUtils {
         val deleteOrderEntity = "DELETE FROM order_entity";
         val runner = new QueryRunner();
         try (val conn = DriverManager.getConnection(
-                urlMySql, user, password)
+                url, user, password)
         ) {
             runner.update(conn, deletePaymentEntity);
             runner.update(conn, deleteCreditEntity);
@@ -46,7 +46,7 @@ public class DBUtils {
         String result = "";
         val runner = new QueryRunner();
         try (val conn = DriverManager.getConnection(
-                urlMySql, user, password)
+                url, user, password)
         ) {
             result = runner.query(conn, status, new ScalarHandler<String>());
             System.out.println(result);

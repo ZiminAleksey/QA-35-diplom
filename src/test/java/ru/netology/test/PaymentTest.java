@@ -254,7 +254,7 @@ public class PaymentTest {
         assertNull(DBUtils.getPaymentStatus());
     }
 
-    // #19
+    // #19 failed
     @SneakyThrows
     @Test
     void shouldBuyPaymentZeroCVC() {
